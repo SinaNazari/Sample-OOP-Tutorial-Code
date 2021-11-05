@@ -24,5 +24,15 @@ namespace OOP_Example_3
                 file.Close();
             }
         }
+
+        //Sample2
+        public void ReadFile2()
+        {
+            var filePath = "C:\\To\\Test.txt";
+            using (FileStream file = new FileStream(filePath, FileMode.OpenOrCreate, FileAccess.ReadWrite))
+            {
+                var fileSize = file.ReadByte();
+            }
+        }
     }
 }
