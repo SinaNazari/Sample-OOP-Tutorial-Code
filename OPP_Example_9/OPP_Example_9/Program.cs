@@ -1,6 +1,5 @@
 ﻿
 //Pass By Reference Parameters
-
 class Program
 {
     static void Main(string[] args)
@@ -12,6 +11,9 @@ class Program
 
         int x;
         my.My(out x);
+
+        MyClass.ShowPerson("Sina", 20, "Ali", "Reza", "Mina", "Sara", "Mammad");
+
     }
 }
 
@@ -29,7 +31,16 @@ class MyClass
     {
         x = 20;
     }
+
+
+    public static void ShowPerson(string name, int age, params string[] Childs)
+    {
+        Console.WriteLine(name + " " + age);
+        foreach (var item in Childs)
+        {
+            Console.WriteLine(item);
+        }
+    }
 }
 
 
-//
