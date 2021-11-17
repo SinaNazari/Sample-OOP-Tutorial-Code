@@ -15,7 +15,7 @@ class Program
             UniversityLocation = "Iran",
             UniversituRank = 67
         };
-
+        
         Employees employees = new Employees()
         {
             Id = 9867,
@@ -32,13 +32,17 @@ class Program
         Console.WriteLine($"Student:Id= {student.Id} FirstName= {student.FirstName} LastName = {student.LastName} Email= {student.Email} Age={student.Age} UniversityName= {student.UniversityName}" +
             $"UniversityLocation = {student.UniversityLocation} UniversityRank = {student.UniversituRank}");
         Console.ResetColor();
+
         Console.WriteLine("////");
         Console.WriteLine("///");
         Console.WriteLine("//");
         Console.WriteLine("/");
+
         Console.ForegroundColor = ConsoleColor.Green;
         Console.WriteLine($"Employees: Id= {employees.Id}FirstName ={employees.FirstName} LastName = {employees.LastName} Email= {employees.Email} Age= {employees.Age} CompanyName ={employees.CompanyName}" +
             $"CompanyLocation = {employees.CompanyLocation} Salary= {employees.Salary}");
         Console.ResetColor();
+        
     }
+    
 }

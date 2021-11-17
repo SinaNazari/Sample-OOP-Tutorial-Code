@@ -8,8 +8,8 @@ namespace OOP_Example_11
 {
     public class Student : Person
     {
-        public string UniversityName{ get; set; }
-        public string UniversityLocation { get; set; }
+        public string? UniversityName{ get; set; }
+        public string? UniversityLocation { get; set; }
         public int UniversituRank { get; set; }
 
         public void Say()
